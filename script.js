@@ -19,7 +19,7 @@ function render() {
 
     for (const [index, image] of images.entries()){
         gallery.innerHTML += /*html*/`
-            <img src="$image" alt="">
+            <img src="./assets/img/${image}" alt="">
         `;
     }
 }
