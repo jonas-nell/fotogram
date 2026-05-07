@@ -8,3 +8,34 @@
     font-family: "Palanquin";
     scroll-behavior: smooth;
 }
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.content {
+    width: 100%;
+    padding: 0px max(calc(50% - 720px), 16px);
+}
+
+header{
+    height: 7.5rem;
+    background-color:rgba(9, 33, 42, 1);
+}
+
+header .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+header img{
+    height: 3.2rem;
+}
+
