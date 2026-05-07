@@ -184,3 +184,21 @@ dialog[open] .close-icon {
 dialog img {
     width: 90%;
 }
+
+.dialog-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    width: 100%;
+    background-color: rgba(9, 33, 42, 1);
+}
+
+.arrow{
+    height: 56px;
+    width: 56px;
+}
+
+#img-counter{
+    font-size: 20px;
+}

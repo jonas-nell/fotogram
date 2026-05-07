@@ -18,7 +18,9 @@ const images = [
 const dialogRef = document.getElementById("img-pop-up");
 const dialogImg = document.getElementById("dialog-img");
 const dialogTitle = document.getElementById("img-title");
+const counterRef = document.getElementById("img-counter");
 
+let currentIndex = 0;
 
 function render() {
 
@@ -35,10 +37,31 @@ function openDialog(index, image){
     const clickedImg = images[index];
     dialogImg.src =`./assets/img/${clickedImg}`;
     dialogTitle.textContent = clickedImg;
+    currentIndex = index
+    updateDialogContent();
     dialogRef.showModal();
 
 }
 
 function closeDialog(){
     dialogRef.close();
+}
+
+function updateDialogContent(){
+    const imageName = images[currentIndex];
+    dialogImg.src = `./assets/img/${imageName}`;
+    dialogTitle.textContent = imageName;
+    counterRef.textContent = `${currentIndex +1} / ${images.length}`;
+}
+
+function changeImage(direction){
+    currentIndex += direction;
+
+    if (currentIndex < 0) {
+        currentIndex = images.length -1;
+    } else if (currentIndex >= images.length){
+        currentIndex = 0;
+    }
+    
+    updateDialogContent();
 }
