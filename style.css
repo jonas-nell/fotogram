@@ -156,6 +156,11 @@ dialog[open]{
     border:none
 }
 
+dialog:focus,
+dialog:focus-visible {
+    outline: none;
+}
+
 dialog[open] .close-icon{
     height: 24px;
     width: 24px;
