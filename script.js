@@ -8,7 +8,7 @@ const images = [
     "005.jpg",
     "006.jpg",
     "007.jpg",
-    "kid_pc_thumbs_up_brent_rambo.gif",
+    "pc_kid.gif",
     "008.jpg",
     "009.jpg",
     "010.jpg",
