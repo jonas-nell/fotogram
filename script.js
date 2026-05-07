@@ -34,7 +34,7 @@ function render() {
 function openDialog(index, image){
     const clickedImg = images[index];
     dialogImg.src =`./assets/img/${clickedImg}`;
-    dialogTitle.innerHTML = clickedImg;
+    dialogTitle.textContent = clickedImg;
     dialogRef.showModal();
 
 }
