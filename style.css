@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    position: relative;
+    color: inherit;
+    font-size: inherit;
+    font-family: "Palanquin";
+    scroll-behavior: smooth;
+}
