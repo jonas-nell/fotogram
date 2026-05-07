@@ -156,6 +156,13 @@ dialog[open]{
     border:none
 }
 
+.dialog-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 dialog:focus,
 dialog:focus-visible {
     outline: none;
@@ -164,10 +171,6 @@ dialog:focus-visible {
 dialog[open] .close-icon{
     height: 24px;
     width: 24px;
-
-    position: absolute;
-    top: 0;
-    right: -100%;
 }
 
 dialog img{
