@@ -130,6 +130,10 @@ figure {
     border: 2px solid rgba(18, 70, 88, 1);
 }
 
+#gallery img:hover{
+    border-color:rgb(112, 193, 227, 1) ;
+}
+
 dialog {
     position: fixed;
     top: 50%;
@@ -182,12 +186,16 @@ dialog[open] .close-icon {
     width: 24px;
 }
 
+.close-icon:hover{
+    content: url("./assets/icons/close_icon_hover.png");
+}
+
 dialog img {
     width: 90%;
-    min-height: 25dvh;
-    max-height: 33dvh;
+    height: 35dvh;
     object-fit: contain;
 }
+
 
 .dialog-footer{
     display: flex;
@@ -201,6 +209,14 @@ dialog img {
 .arrow{
     height: 56px;
     width: 56px;
+}
+
+.arrow:hover{
+    content: url("./assets/icons/hover_arrow.png");
+}
+
+.left:hover{
+    transform: rotate(180deg);
 }
 
 #img-counter{
