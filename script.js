@@ -28,8 +28,8 @@ function render() {
 
     for (const [index, image] of images.entries()){
         gallery.innerHTML += /*html*/`
-            <img onclick="openDialog(${index})" src="./assets/img/${image}" alt="">
-        `;
+            <img onclick="openDialog(${index})" onkeydown="if(event.key === 'Enter') openDialog(${index})" src="./assets/img/${image}" tabindex=0 alt="">
+        `; 
     }
 }
 

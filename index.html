@@ -25,15 +25,17 @@
                                 <img
                                     class="close-icon"
                                     onclick="closeDialog()"
+                                    onkeydown="if(event.key === 'Enter') closeDialog()"
                                     src="./assets/icons/close_icon.png"
+                                    tabindex="0"
                                     alt=""
                                 />
                             </header>
                             <img id="dialog-img" src="" alt="" />
                             <footer class="dialog-footer">
-                                <img class="arrow left" onclick="changeImage(-1)" src="./assets/icons/arrow_left.png" alt="">
+                                <img class="arrow left" onclick="changeImage(-1)" onkeydown="if(event.key === 'Enter') changeImage(-1)" tabindex="0" src="./assets/icons/arrow_left.png" alt="">
                                 <span id="img-counter">1/14</span>
-                                <img class="arrow" onclick="changeImage(1)" src="./assets/icons/arrow_right.png" alt="">
+                                <img class="arrow" onclick="changeImage(1)" onkeydown="if(event.key === 'Enter') changeImage(1)" tabindex="0" src="./assets/icons/arrow_right.png" alt="">
 
                             </footer>
                         </div>
