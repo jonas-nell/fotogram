@@ -183,6 +183,8 @@ dialog[open] .close-icon {
 
 dialog img {
     width: 90%;
+    max-height: 33dvh;
+    object-fit: contain;
 }
 
 .dialog-footer{
