@@ -63,7 +63,7 @@ header .content {
 @media screen and (min-width: 549px){
     header .content{
         justify-content: flex-start;
-        padding-left: 48px;
+        padding: 0px max(calc(50% - 720px), 48px);
     }
 }
 
@@ -257,4 +257,9 @@ dialog img {
 
 #img-counter{
     font-size: 20px;
+    width: 60px;
+}
+
+.close-icon, .arrow, #gallery img{
+    cursor: pointer;
 }

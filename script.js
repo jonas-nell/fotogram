@@ -39,15 +39,20 @@ function openDialog(index, image){
     dialogTitle.textContent = clickedImg;
     currentIndex = index
     updateDialogContent();
+    document.body.style.overflowY = "hidden";
     dialogRef.showModal();
 
 }
 
 function closeDialog(){
+    document.body.style.overflowY = "auto";
     dialogRef.close();
 }
 
 function updateDialogContent(){
+    dialogImg.src = "";
+    dialogTitle.textContent = "";
+    counterRef.textContent = "";
     const imageName = images[currentIndex];
     dialogImg.src = `./assets/img/${imageName}`;
     dialogTitle.textContent = imageName;
