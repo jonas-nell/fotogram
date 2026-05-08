@@ -48,6 +48,9 @@ function closeDialog(){
 }
 
 function updateDialogContent(){
+    dialogImg.src = "";
+    dialogTitle.textContent = "";
+    counterRef.textContent = "";
     const imageName = images[currentIndex];
     dialogImg.src = `./assets/img/${imageName}`;
     dialogTitle.textContent = imageName;
