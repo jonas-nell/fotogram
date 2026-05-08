@@ -218,8 +218,16 @@ dialog[open] {
 }
 
 dialog[open] .close-icon {
-    height: 24px;
-    width: 24px;
+    height: 36px;
+    width: 36px;
+}
+
+@media screen and (min-width: 746px) {
+    dialog[open] .close-icon{
+        height:42px;
+        width: 42px;
+    }
+    
 }
 
 .close-icon:hover{
