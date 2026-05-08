@@ -23,8 +23,24 @@ html {
     font-size: 62.5%;
 }
 
+@media screen and (min-width: 768px){
+    html {
+        font-size: 79%;;
+    }
+}
+
 body {
     font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    background-color: rgba(6, 23, 30, 1);
+}
+
+main{
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .content {
@@ -44,6 +60,13 @@ header .content {
     height: 100%;
 }
 
+@media screen and (min-width: 549px){
+    header .content{
+        justify-content: flex-start;
+        padding-left: 48px;
+    }
+}
+
 header img {
     height: 3.2rem;
 }
@@ -52,7 +75,7 @@ section {
     background-color: rgba(6, 23, 30, 1);
     padding-top: 4.8rem;
     padding-bottom: 4.8rem;
-    min-height: 93dvh;
+    flex-grow: 1;
 }
 
 section .content {
@@ -121,6 +144,18 @@ figure {
     justify-content: center;
     row-gap: 16px;
     column-gap: 16px;
+}
+
+@media screen and (min-width:769px) {
+    #gallery{
+        row-gap: 32px;
+    }
+}
+
+@media screen and (min-width: 931px) {
+    #gallery{
+        row-gap: 48px;
+    }
 }
 
 #gallery img {
