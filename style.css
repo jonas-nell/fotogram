@@ -258,3 +258,7 @@ dialog img {
 #img-counter{
     font-size: 20px;
 }
+
+.close-icon, .arrow, #gallery img{
+    cursor: pointer;
+}
