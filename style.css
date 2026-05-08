@@ -196,7 +196,8 @@ dialog {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 24px;
     width: 100%;
     text-align: center;
 }
